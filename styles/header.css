@@ -1,0 +1,136 @@
+.header
+{
+    background-color: black;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 1;
+    border-bottom: 2px solid gray;
+}
+.left-section{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.middle-section{
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-section{
+    width: 300px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.transformers-heading-image{
+    height: 80px;
+}
+.bee-solo-image{
+    height: 80px;
+}
+.search-image{
+    height: 34px;
+    margin-right: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid white;
+    margin-left: -10px;
+}
+.search-button{
+    flex: 1;
+    margin-left: 50px;
+    outline: none;
+    padding: 2px 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid white;
+    font-family: "Crimson Text";
+    font-weight: bold;
+    font-size: 23px;
+    background-color: rgb(49 , 49 , 49);
+    color: white;
+    width: 0;
+}
+.search-button::placeholder{
+    color: white;
+}
+.voice-image{
+    height: 37px;
+    margin-right: 50px;
+    border-radius: 40px;
+    border: 2px solid white;
+}
+.bee-solo{
+    height: 60px;
+    border: 2px solid red;
+    border-radius: 40px;
+}
+.optimus-solo{
+    height: 60px;
+    border: 2px solid orange;
+    border-radius: 40px;
+}
+.shockwave-solo{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    border: 2px solid green;
+}
+.image-section{
+    position: relative;
+}
+.hover-effect{
+    position: absolute;
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 50px;
+    height: 100px;
+    top: 35px;
+    left: -75px;
+    opacity: 0;
+    transition: 0.15s;
+    pointer-events: none;
+}
+.image-section:hover .hover-effect{
+    opacity: 1;
+}
+.hover-effect1{
+    position: absolute;
+    background-color: black;
+    border: 2px solid green;
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+    top: 35px;
+    left: -65px;
+    opacity: 0;
+    transition: 0.15s;
+    pointer-events: none;
+}
+.image-section:hover .hover-effect1{
+    opacity: 1;
+}
+.hover-effect2{
+    position: absolute;
+    background-color: black;
+    border: 2px solid orange;
+    border-radius: 50px;
+    height: 100px;
+    top: 35px;
+    left: -65px;
+    opacity: 0;
+    transition: 0.15s;
+    pointer-events: none;
+}
+.image-section:hover .hover-effect2{
+    opacity: 1;
+}
